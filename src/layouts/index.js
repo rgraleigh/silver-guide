@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 
 import Header from '../components/header';
+import Navbar from '../components/navbar.js';
+import Billboard from '../components/billboard.js';
 import Footer from '../components/footer.js';
 import './index.css';
 import '@blueprintjs/core/lib/css/blueprint.css';
@@ -18,6 +20,8 @@ const Layout = ({ children, data }) => (
       ]}
     />
     <Header siteTitle={data.site.siteMetadata.title} />
+    <Navbar />
+    <Billboard />
     <div
       style={{
         margin: '0 auto',
@@ -28,6 +32,7 @@ const Layout = ({ children, data }) => (
     >
       {children()}
     </div>
+
     <Footer />
   </div>
 )
