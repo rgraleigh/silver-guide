@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'gatsby-link';
 
 const footerContainer = {
   backgroundColor: "#0099ff",
@@ -6,39 +7,40 @@ const footerContainer = {
   padding: 20,
   display: "flex",
   flexDirection: "row",
+  justifyContent: "space-between",
   alignItems: "center"
 };
 
-const footerStyle = {
-  backgroundColor: "#333333",
-  color: "#fcfcfc",
-  padding: "20px"
+const footerItem = {
+  flexDirection: "row",
 };
 
-const socialListStyle = {
-  listStyle: "none",
+const socialList = {
   display: "flex",
-  margin: "0px 10px 10px 10px",
+  flexDirection: "row",
+  listStyleType: "none",
 };
 
-const socialLinkStyle = {
-  marginRight: 10,
+const socialListItem = {
+  marginTop: 10,
+  marginRight: 10
 };
 
 function Footer() {
   return (
-    <footer className='darkgray1' style={footerContainer}>
-      <div className=''>
+    <footer style={footerContainer}>
+      <div style={footerItem}>
         <p className=''>
-          &copy; 2006 &mdash; 2018. All rights reserved. RGR Digital, LLC.
+          &copy; 2006 &mdash; 2018. All rights reserved. &nbsp;
+          <Link to="https://www.robertgraleigh.com">RGR Digital, LLC.</Link>
         </p>
       </div>
-      <div className='' >
-        <ul className='' style={socialListStyle}>
-          <li className={socialLinkStyle}>FB</li>
-          <li>TW</li>
-          <li>LI</li>
-          <li>GB</li>
+      <div style={footerItem}>
+        <ul style={socialList}>
+          <li style={socialListItem}>FB</li>
+          <li style={socialListItem}>TW</li>
+          <li style={socialListItem}>LI</li>
+          <li style={socialListItem}>GB</li>
         </ul>
       </div>
     </footer>
