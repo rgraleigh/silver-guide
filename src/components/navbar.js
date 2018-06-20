@@ -4,7 +4,7 @@ import Link from 'gatsby-link';
 function Navbar() {
 
   const navbarStyle = {
-    backgroundColor: "#FF9900",
+    backgroundColor: "#F9F9F9",
     padding: 20
   };
 
@@ -19,11 +19,11 @@ function Navbar() {
   const navbarListItems = {
     display: "flex",
     flexDirection: "row-reverse",
-
+    fontSize: "16px",
   };
 
   const navbarLinks = {
-    color: "#FCFCFC",
+    color: "#0099FF",
     textTransform: "uppercase"
   };
 

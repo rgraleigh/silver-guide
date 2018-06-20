@@ -7,7 +7,7 @@ const headerStyle = {
   flexDirection: "row",
   flexWrap: "wrap",
   justifyContent: "space-between",
-  backgroundColor: "#FCFCFC",
+  backgroundColor: "#FFFFFF",
   color: "#0099FF",
   marginBottom: "0rem",
   padding: "1rem"
@@ -27,7 +27,7 @@ const Header = ({ siteTitle }) => (
         </Link>
         <span style={{
           fontSize: "16px"
-        }}>Servant Leader proficient in Agile, Scrum, Kanban.</span>
+        }}>Agile Servant Leader proficient in Lean, Scrum, and Kanban.</span>
       </h1>
       <ul style={{
         display: "flex",
@@ -36,11 +36,13 @@ const Header = ({ siteTitle }) => (
         listStyleType: "none",
       }}>
         <li style={{
+          color: '#0099FF',
           fontSize: "14px",
           paddingRight: "1rem"
         }}>
         <Link to="tel:+1503765356"><FontAwesome.FaPhone />+1 (503) 765-9356</Link></li>
         <li style={{
+          color: '#0099FF',
           fontSize: "14px",
           paddingRight: "1rem"
         }}>
@@ -50,6 +52,7 @@ const Header = ({ siteTitle }) => (
           </Link>
         </li>
         <li style={{
+          color: '#0099FF',
           fontSize: "14px",
           paddingRight: "1rem"
         }}>

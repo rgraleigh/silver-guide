@@ -1,8 +1,12 @@
 import React from 'react';
 import Link from 'gatsby-link';
+import FaFacebook from 'react-icons/lib/fa/facebook';
+import FaLinkedin from 'react-icons/lib/fa/linkedin';
+import FaTwitter from 'react-icons/lib/fa/twitter';
+import FaGithub from 'react-icons/lib/fa/github';
 
 const footerContainer = {
-  backgroundColor: "#0099ff",
+  backgroundColor: "#3F3F3F",
   color: "#FCFCFC",
   padding: 20,
   display: "flex",
@@ -37,10 +41,26 @@ function Footer() {
       </div>
       <div style={footerItem}>
         <ul style={socialList}>
-          <li style={socialListItem}>FB</li>
-          <li style={socialListItem}>TW</li>
-          <li style={socialListItem}>LI</li>
-          <li style={socialListItem}>GB</li>
+          <li style={socialListItem}>
+            <Link to="https://www.facebook.com/robertgraleigh``">
+              <FaFacebook />
+            </Link>
+          </li>
+          <li style={socialListItem}>
+            <Link to="https://www.twitter.com/robertgraleigh">
+              <FaTwitter />
+            </Link>
+          </li>
+          <li style={socialListItem}>
+            <Link to="https://www.linkedin.com/in/robertgraleigh">
+              <FaLinkedin />
+            </Link>
+          </li>
+          <li style={socialListItem}>
+            <Link to="https://www.github.com/robert-g-raleigh">
+              <FaGithub />
+            </Link>
+          </li>
         </ul>
       </div>
     </footer>
