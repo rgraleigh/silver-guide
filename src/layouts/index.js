@@ -10,8 +10,14 @@ import './index.css';
 import '@blueprintjs/core/lib/css/blueprint.css';
 import '@blueprintjs/icons/lib/css/blueprint-icons.css';
 
+const flexContainer = {
+  display: "flex",
+  flexDirection: "column",
+  flexFlow: "wrap"
+};
+
 const Layout = ({ children, data }) => (
-  <div>
+  <div className="flexContainer">
     <Helmet
       title={data.site.siteMetadata.title}
       meta={[
