@@ -1,13 +1,16 @@
 import React from 'react';
 import Link from 'gatsby-link';
+import * as FontAwesome from 'react-icons/lib/fa';
 
 const headerStyle = {
   display: "flex",
   flexDirection: "row",
-  justifyContent: "flex-start",
+  flexWrap: "wrap",
+  justifyContent: "space-between",
   backgroundColor: "#FCFCFC",
   color: "#0099FF",
-  marginBottom: "0rem"
+  marginBottom: "0rem",
+  padding: "1rem"
 };
 
 const Header = ({ siteTitle }) => (
@@ -20,8 +23,11 @@ const Header = ({ siteTitle }) => (
             textDecoration: 'none',
           }}
         >
-          {siteTitle}
+          {siteTitle}:
         </Link>
+        <span style={{
+          fontSize: "16px"
+        }}>Servant Leader proficient in Agile, Scrum, Kanban.</span>
       </h1>
       <ul style={{
         display: "flex",
@@ -33,16 +39,22 @@ const Header = ({ siteTitle }) => (
           fontSize: "14px",
           paddingRight: "1rem"
         }}>
-        <Link to="tel:+1503765356">+1 (503) 765-9356</Link></li>
-        <li style={{
-          fontSize: "14px",
-          paddingRight: "1rem"
-        }}><Link to="mailto:robert@robertgraleigh.com">robert@robertgraleigh.com</Link></li>
+        <Link to="tel:+1503765356"><FontAwesome.FaPhone />+1 (503) 765-9356</Link></li>
         <li style={{
           fontSize: "14px",
           paddingRight: "1rem"
         }}>
-          @robertgraleigh
+          <Link to="mailto:robert@robertgraleigh.com">
+            <FontAwesome.FaEnvelope />
+            robert@robertgraleigh.com
+          </Link>
+        </li>
+        <li style={{
+          fontSize: "14px",
+          paddingRight: "1rem"
+        }}>
+          <FontAwesome.FaSlack />
+          RobertGRaleigh
         </li>
       </ul>
   </div>
