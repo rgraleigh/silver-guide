@@ -33,13 +33,13 @@ function Navbar() {
   return (
     <nav style={navbarStyle}>
       <ul style={navbarList}>
-        <li style={navbarListItems}><Link to="/page-2/" style={navbarLinks}>Home</Link></li>
+        <li style={navbarListItems}><Link to="/" style={navbarLinks}>Home</Link></li>
         <li style={navbarListItems}><Link to="/about/" style={navbarLinks}>About</Link></li>
-        <li style={navbarListItems}><Link to="/agile/" style={navbarLinks}>Products</Link></li>
-        <li style={navbarListItems}><Link to="/agile/" style={navbarLinks}>Services</Link></li>
-        <li style={navbarListItems}><Link to="/clients/" style={navbarLinks}>Work</Link></li>
+        <li style={navbarListItems}><Link to="/products/" style={navbarLinks}>Products</Link></li>
+        <li style={navbarListItems}><Link to="/services/" style={navbarLinks}>Services</Link></li>
+        <li style={navbarListItems}><Link to="/work/" style={navbarLinks}>Work</Link></li>
         <li style={navbarListItems}>
-          <Link to="/websites/" style={navbarLinks}>
+          <Link to="/contact/" style={navbarLinks}>
             <button style={{
               backgroundColor: "#333333",
               color: "#FCFCFC",

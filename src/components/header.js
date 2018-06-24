@@ -10,7 +10,7 @@ const headerStyle = {
   backgroundColor: "#FFFFFF",
   color: "#0099FF",
   marginBottom: "1rem",
-  borderTop: "Solid 10px #0099FF",
+  borderTop: "Solid 7px #0099FF",
   padding: "1rem",
   height: "8vh"
 };
@@ -33,7 +33,7 @@ const Header = ({ siteTitle }) => (
             textDecoration: 'none',
           }}
         >
-          {siteTitle}:
+          RGR:
         </Link>
         <span style={{
           fontSize: "16px"
