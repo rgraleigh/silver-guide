@@ -7,6 +7,7 @@ function Billboard() {
     backgroundColor: "#999999",
     color: "#000000",
     padding: 40,
+    height: "70vh"
   };
 
   return (

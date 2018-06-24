@@ -13,7 +13,10 @@ function Navbar() {
     flexDirection: "row",
     flexWrap: "wrap",
     justifyContent: "space-evenly",
-    listStyleType: "none"
+    listStyleType: "none",
+    margin: "0 0 0 0",
+    padding: "15px 0px 5px 0px",
+    height: "8vh"
   };
 
   const navbarListItems = {
@@ -32,12 +35,38 @@ function Navbar() {
       <ul style={navbarList}>
         <li style={navbarListItems}><Link to="/page-2/" style={navbarLinks}>Home</Link></li>
         <li style={navbarListItems}><Link to="/about/" style={navbarLinks}>About</Link></li>
-        <li style={navbarListItems}><Link to="/agile/" style={navbarLinks}>Agile</Link></li>
-        <li style={navbarListItems}><Link to="/clients/" style={navbarLinks}>Clients</Link></li>
-        <li style={navbarListItems}><Link to="/e-commerce/" style={navbarLinks}>E-Commerce</Link></li>
-        <li style={navbarListItems}><Link to="/websites/" style={navbarLinks}>Websites</Link></li>
-        <li style={navbarListItems}><Link to="/websites/" style={navbarLinks}>Contact</Link></li>
-        <li style={navbarListItems}><Link to="/websites/" style={navbarLinks}>Get Started</Link></li>
+        <li style={navbarListItems}><Link to="/agile/" style={navbarLinks}>Products</Link></li>
+        <li style={navbarListItems}><Link to="/agile/" style={navbarLinks}>Services</Link></li>
+        <li style={navbarListItems}><Link to="/clients/" style={navbarLinks}>Work</Link></li>
+        <li style={navbarListItems}>
+          <Link to="/websites/" style={navbarLinks}>
+            <button style={{
+              backgroundColor: "#333333",
+              color: "#FCFCFC",
+              paddingLeft: "15px",
+              paddingRight: "15px",
+              paddingTop: "10px",
+              paddingBottom: "10px",
+              borderRadius: "5px"
+            }}>
+              Contact
+            </button>
+          </Link>
+        </li>
+        <li style={navbarListItems}>
+          <Link to="/get-started/" style={navbarLinks}>
+          <button style={{
+            backgroundColor: "#FF0000",
+            color: "#FCFCFC",
+            paddingLeft: "15px",
+            paddingRight: "15px",
+            paddingTop: "10px",
+            paddingBottom: "10px",
+            borderRadius: "5px"
+          }}>
+            Get Started
+          </button>
+        </Link></li>
       </ul>
     </nav>
   );

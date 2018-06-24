@@ -9,13 +9,23 @@ const headerStyle = {
   justifyContent: "space-between",
   backgroundColor: "#FFFFFF",
   color: "#0099FF",
-  marginBottom: "0rem",
-  padding: "1rem"
+  marginBottom: "1rem",
+  borderTop: "Solid 10px #0099FF",
+  padding: "1rem",
+  height: "8vh"
+};
+
+const headingStyle = {
+  display: "flex",
+  flexDirection: "row",
+  justifyContent: "flex-start",
+  alignContent: "center",
+  margin: "0"
 };
 
 const Header = ({ siteTitle }) => (
   <div style={headerStyle}>
-      <h1 style={{ margin: 0 }}>
+      <h1 style={ headingStyle }>
         <Link
           to="/"
           style={{
