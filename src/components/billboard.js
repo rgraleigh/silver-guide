@@ -5,6 +5,7 @@ function Billboard() {
 
   const billboardStyle = {
     backgroundColor: "#999999",
+    backgroundImage: "url(http://fillmurray.com/g/1440/600)",
     color: "#000000",
     padding: 40,
     height: "70vh"
