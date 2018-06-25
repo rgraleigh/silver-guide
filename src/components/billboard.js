@@ -13,7 +13,7 @@ function Billboard() {
 
   return (
     <section className='billboard' style={billboardStyle}>
-      <div>
+      <div style={{ display: "flex", flexDirection: "column", backgroundColor: "#FF0000", width: "400px"}}>
         <h1 className="">
           Page Title
         </h1>
