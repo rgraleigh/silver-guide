@@ -11,7 +11,7 @@ const flexxyGrid = {
 
 const flexxyRow = {
   display: "flex",
-  flexDirection: "row",
+  flexDirection: "column",
 };
 
 const flexxyRowNoWrap = {
@@ -22,6 +22,10 @@ const flexxyRowNoWrap = {
 const flexxyCol = {
   display: "flex",
   flexDirection: "column"
+};
+
+const flexxyItem = {
+  flex: "1 1 auto"
 };
 
 const flexxyColWrap = {
@@ -40,22 +44,34 @@ const FlexxyPage = () => (
 
   <div style={flexxyGrid}>
     <div style={flexxyRow}>
-      <h1>This is an h1</h1>
+      <div style={flexxyItem}>
+        <h1>This is an h1</h1>
+      </div>
     </div>
     <div style={flexxyRow}>
-      <h2>This is an h1</h2>
+      <div style={flexxyItem}>
+        <h1>This is an h1</h1>
+      </div>
     </div>
     <div style={flexxyRow}>
-      <h3>This is an h1</h3>
+      <div style={flexxyItem}>
+        <h1>This is an h1</h1>
+      </div>
     </div>
     <div style={flexxyRow}>
-      <h4>This is an h1</h4>
+      <div style={flexxyItem}>
+        <h1>This is an h1</h1>
+      </div>
     </div>
     <div style={flexxyRow}>
-      <h5>This is an h1</h5>
+      <div style={flexxyItem}>
+        <h1>This is an h1</h1>
+      </div>
     </div>
     <div style={flexxyRow}>
-      <h6>This is an h1</h6>
+      <div style={flexxyItem}>
+        <h1>This is an h1</h1>
+      </div>
     </div>
   </div>
 
