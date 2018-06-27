@@ -44,6 +44,12 @@ const blueBottomBorder = {
   borderBottomColor: '#0099FF'
 };
 
+const sectionH2Style = {
+  fontFamily: "Lato",
+  fontSize: "54px",
+  marginBottom: "40px"
+};
+
 const WorkPage = () => (
   <div className={flexContainer}>
 
@@ -57,7 +63,7 @@ const WorkPage = () => (
 
     <section style={sectionHeadingStyle}>
       <div>
-        <h2 style={{fontFamily: "Lato", fontSize: "45px", marginBottom: "40px"}}>
+        <h2 style={{fontSize: "54px", marginBottom: "40px"}}>
           <span style={blueBottomBorder}>Past Clients</span>
         </h2>
       </div>
@@ -128,7 +134,7 @@ const WorkPage = () => (
 
     <section style={sectionHeadingStyle}>
       <div >
-        <h2>
+        <h2 style={{fontSize: "54px", marginBottom: "40px"}}>
           <span style={blueBottomBorder}>Past Projects</span>
         </h2>
       </div>
